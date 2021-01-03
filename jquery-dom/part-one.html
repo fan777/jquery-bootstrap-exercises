@@ -73,8 +73,41 @@
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="part-one.js">
-  // Add your code here!
+<script>
+  $(function() {
+    console.log("Let's get ready to party with jQuery!");
+
+    $('article img').addClass('image-center');
+
+    $('article p').last().remove();
+    // $("article p:last-child").remove(); //official
+
+    $('#title').css('font-size', Math.floor(Math.random() * 100));
+    // $("#title").css("font-size", Math.random() * 100); // official
+
+    $('ol').append('<li>I like cats</li>');
+    // $("ol").append($("<li>", {text: "I can add to lists with jQuery!"})); // official
+   
+    $('aside').empty().append("<p>i'm sorry for lists, here's a paragraph</p>");
+    // $("aside") 
+    //     .empty()
+    //     .append($("<p>", {text: "Sorry about that list :("})); // official
+    
+    $('.form-control').on('change', function() {
+        let red = $('.form-control').eq(0).val();
+        let blue = $('.form-control').eq(1).val();
+        let green = $('.form-control').eq(2).val();
+        $('body').css('background-color', `rgb(${red},${green},${blue})`);
+        // $("body").css("background-color", "rgb(" + red + "," + green + "," + blue + ")"); // official
+    });
+
+    $('img').on('click', function() {
+        $(this).remove();
+    });
+    // $("img").on('click', function (e) {
+    //   $(e.target).remove();
+    // }); // official
+  });
 </script>
 </body>
 

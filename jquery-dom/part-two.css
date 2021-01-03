@@ -1,0 +1,56 @@
+/* sections */
+
+#movie-form {
+    margin: 5px 5px 25px 5px;
+    /* width: 500px; */
+}
+
+#movie-list {
+    margin: 5px 5px 5px 5px;
+    /* width: 650px; */
+}
+
+/* form */
+
+label {
+    width: 125px;
+    height: 30px;
+    display:inline-block
+}
+
+#movieTitle {
+    width: 300px;
+}
+
+#movieRating {
+    width: 80px;
+}
+
+/* table */
+
+table th, td {
+    border: 1px dotted black;
+    text-align: center;
+}
+
+.action {
+    border: 0px;
+}
+
+.title {
+    text-align: left;
+    padding: 0px 5px 0px 5px
+}
+
+#tableAction {
+    width: 125px;
+}
+
+#tableTitle {
+    width: 400px;
+}
+
+#tableRating {
+    width: 125px;
+}
+
